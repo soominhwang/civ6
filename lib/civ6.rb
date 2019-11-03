@@ -1,6 +1,7 @@
-require "civ6/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module Civ6
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./civ6/version"
+require_relative "./civ6/civ"
+require_relative "./civ6/cli"
