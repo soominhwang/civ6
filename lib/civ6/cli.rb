@@ -6,7 +6,6 @@ class Civ6::CLI
     populate_data
     list_civilizations
     option
-    goodbye
   end
 
   def populate_data
@@ -16,6 +15,8 @@ class Civ6::CLI
 
   def list_civilizations
     puts "Civilizations of Civ 6:"
+
+
     @civ = Civ6::Civ.all
     @civ.each.with_index(1) do |civ, i|
       puts "#{i}. #{civ.name} - #{civ.leader} - #{civ.civ_ability}"
@@ -33,14 +34,12 @@ class Civ6::CLI
         puts "#{the_civ.name} - #{the_civ.leader} - #{the_civ.civ_ability}. For more information, check out #{the_civ.url} for more information."
       elsif input == "list"
         list_civilizations
+      elsif input =="exit"
+        puts "See you tomorrow for more civilization wiki!"
       else
         puts "I'm not sure what you want - type list or exit!"
       end
     end
-  end
-
-  def goodbye
-    puts "See you tomorrow for more civilization wiki!"
   end
 
 end
