@@ -1,6 +1,6 @@
 # Civ6
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/civ6`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem - Civ 6!
 
 ## Installation
 
@@ -20,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can use the gem 'civ6' to get more information about each of the civilizations that exist in the Civilization 6 game.
+
+Once you install the gem, you will need to run the following lines of code in your terminal to access this application.
+
+```ruby
+cd civ6
+./bin/civ6
+```
+
+Then you will see a list of 42 Civilizations that exist in the Expansion package of the Civilization 6 game.
+
+You can interact with this application by entering the number of civilization you want to learn more about, executing 'list' to see the list again, or exit the application by executing 'exit'.
 
 ## Development
 
@@ -30,7 +41,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/civ6. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/soominhwang/civ6. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
